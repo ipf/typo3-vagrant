@@ -55,7 +55,7 @@ end
 directories = ["uploads", "typo3conf", "typo3temp", "fileadmin"]
 
 directories.each do |d| 
- execute "chmod -R 777 " + d
+ execute "chmod -R 777 /var/www/html/" + d
 end
 
 file "/var/www/typo3/latest.tgz" do
