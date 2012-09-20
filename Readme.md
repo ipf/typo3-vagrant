@@ -12,6 +12,7 @@
 # Running
 
 Simply use the "vagrant up" command to start your virtual machine.
+In some cases you have to call "vagrant reload" after that to become provisioned with software.
 
 # Passwords
 
