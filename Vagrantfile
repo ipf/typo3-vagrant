@@ -43,6 +43,8 @@ Vagrant::Config.run do |config|
     chef.json = {
       "mysql" => {
         "server_root_password" => "typo3",
+	"server_debian_password" => "typo3",
+	"server_repl_password" => "typo3"
       }
     }
     chef.add_recipe "mysql::server"
