@@ -1,5 +1,5 @@
 execute "apt-get update"
-execute "apt-get -y -q upgrade"
+#execute "apt-get -y -q upgrade"
 
 packages = ["php5", "php5-cli", "php-pear", "php5-mysql", "php5-gd", "graphicsmagick"]
 
@@ -34,7 +34,7 @@ execute "cd /var/www/typo3 && sudo tar xzf latest.tgz" do
   end
 end
  
-execute "wget http://prdownloads.sourceforge.net/typo3/introductionpackage-6.0.0beta2.tar.gz -O /var/www/html/intro.tgz" do
+execute "wget http://prdownloads.sourceforge.net/typo3/introductionpackage-6.0.4.tar.gz -O /var/www/html/intro.tgz" do
   not_if do
     File.exists?("/var/www/html/intro.tgz")
   end

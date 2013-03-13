@@ -47,8 +47,8 @@ Vagrant::Config.run do |config|
 	"server_repl_password" => "typo3"
       }
     }
-    chef.add_recipe "mysql::server"
-        chef.add_recipe "typo3"
+    chef.add_recipe("typo3")
+    chef.add_recipe("mysql::server")
    end
 
 end
