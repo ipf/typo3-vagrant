@@ -2,12 +2,11 @@
 
 ## Clone this repository
 
-* git clone git://github.com/ipf/typo3-vagrant.git
+ > git clone git://github.com/ipf/typo3-vagrant.git
 
 ## Get all submodules
 
- * git submodule init
- * git submodule update
+ > git submodule update --init
 
 # Running
 
